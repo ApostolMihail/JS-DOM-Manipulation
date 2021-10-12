@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS DOM Manipulation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="hidden-message" id="hidden-message">
+            
+        </div>
+
+        <div class="second-container">
+            <form class='form-container'>
+
+                <div class='container-of-firstName'>
+                    <input type="text" id='firstName' placeholder="First Name" pattern="[A-Za-z]{1,15}" maxlength="16" >
+                </div>
+
+                <div class='container-of-lastName'>
+                    <input type="text" id='lastName' placeholder="Last Name"  pattern="[A-Za-z]{1,15}" maxlength="16">
+                </div>
+
+                <div class="container-of-radio">
+                    <span class='select-gender'>Gender</span>
+                    <span>
+                        <input type="radio" name='gender' class="genders" id='M' value="Male" checked="checked">
+                        <label for="M">M</label>
+                    </span>
+                    <span>
+                        <input type="radio" name='gender' class="genders" id='F' value="Female" checked="checked">
+                        <label for="F">F</label>
+                    </span>
+                </div>
+
+                <div class="container-of-textarea">
+                    <textarea placeholder="Your message here...." id="text-area" cols="30" rows="10" ></textarea>
+                </div>
+
+                <div class="container-of-button">
+                    <button id='submit-button' class='submit-button' onclick="submitform(event)">Submit</button>
+                </div>
+            </form>
+            
+            <div>
+                <img src="send-message.jpg" alt="">
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="https://kit.fontawesome.com/0dda3df3bc.js" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>

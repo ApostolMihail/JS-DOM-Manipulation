@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+}
+
+.hidden-message {
+    color: green;
+    background-color: rgb(201, 188, 133);
+    margin-top: 20px;
+    padding: 5px;
+    width:582px;
+    visibility: hidden;
+}
+
+.second-container {
+    border: 1px solid black;
+    padding: 15px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+}
+
+.container-of-radio {
+    display: flex;
+    flex-direction: column;
+}
+
+#text-area {
+    resize: none;
+    padding: 5px;
+}
+
+#firstName, #lastName, #text-area {
+    border: 1px solid black;
+    width: 300px;
+}
+
+#firstName {
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+#lastName {
+    margin-top: 8px;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+#M, #F {
+    margin-left: 80px;
+}
+
+#F {
+    margin-bottom: 15px;
+}
+
+#submit-button {
+    color: white;
+    background-color: rgb(87, 203, 211);
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 237px;
+    margin-top: 30px;
+    border: 1px solid black;
+}
+
+img {
+    float: left;
+    width: 250px;
+    height: 390px;
+    padding: 0px 0px 0px 40px;
+}
+
+#firstName:invalid,
+#lastName:invalid,
+#text-area:invalid {
+    border: 1px solid red;
+}
+
+.fas {
+    padding-right: 10px;
+    padding-left: 5px;
+}
+
+#x {
+    float: right;
+}
